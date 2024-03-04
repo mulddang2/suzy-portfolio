@@ -855,6 +855,8 @@ textarea {
   color: #eee;
   font-size: 1.5rem;
   line-height: 1.7;
+  /* word-break: 텍스트 단어 깨짐 방지 */
+  word-break: keep-all;
 }
 .main-footer__social-cont {
   margin-top: 2rem;
