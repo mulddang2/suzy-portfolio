@@ -48,7 +48,8 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  word-break: keep-all;
 }
 
 a {
@@ -96,7 +97,6 @@ textarea {
     margin-bottom: 8rem;
   }
 }
-
 .heading-sec__mb-med {
   margin-bottom: 9rem;
 }
@@ -105,7 +105,6 @@ textarea {
     margin-bottom: 8rem;
   }
 }
-
 .heading-sec__main {
   display: block;
   font-size: 4rem;
@@ -120,16 +119,16 @@ textarea {
   color: #fff;
 }
 .heading-sec__main--lt::after {
-  content: '';
+  content: "";
   background: #fff !important;
 }
 .heading-sec__main::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #1fb498;
+  background: rgba(31, 180, 153, 0.8);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -139,7 +138,6 @@ textarea {
     top: calc(100% + 1.2rem);
   }
 }
-
 .heading-sec__sub {
   display: block;
   text-align: center;
@@ -194,13 +192,13 @@ textarea {
   font-size: 1.6rem;
 }
 .btn--theme {
-  background: #1fb498;
+  background: rgba(31, 180, 153, 0.8);
   color: #fff;
 }
 .btn--theme-inv {
-  color: #1fb498;
+  color: rgba(31, 180, 153, 0.8);
   background: #fff;
-  border: 2px solid #1fb498;
+  border: 2px solid rgba(31, 180, 153, 0.8);
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
 }
@@ -215,7 +213,7 @@ textarea {
 }
 
 .text-primary {
-  color: #fff;
+  color: purple;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
@@ -233,18 +231,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  /* background: linear-gradient(
-      to right,
-      rgba(31, 180, 153, 0.8),
-      rgba(31, 180, 153, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg); */
-  background: linear-gradient(
-      to right,
-      rgb(31 81 180 / 80%),
-      rgba(31, 180, 153, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(31, 81, 180, 0.8), rgba(31, 180, 153, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -325,7 +312,7 @@ textarea {
 }
 
 .about {
-  background: #fafafa;
+  background: rgb(250, 250, 250);
 }
 .about__content {
   display: grid;
@@ -399,10 +386,6 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
 }
-
-.projects__row-btn > a:first-child {
-  margin-right: 2rem;
-}
 @media only screen and (max-width: 56.25em) {
   .projects__row-content {
     align-items: center;
@@ -430,20 +413,18 @@ textarea {
     font-size: 1.7rem;
   }
 }
+.projects__row-btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.projects__row-btn > a:first-child {
+  margin-right: 1.5rem;
+}
 
 .contact {
-  /* background: linear-gradient(
-      to right,
-      rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg); */
-  background: linear-gradient(
-      to right,
-      rgb(31 81 180 / 80%),
-      rgba(31, 180, 153, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(31, 81, 180, 0.8), rgba(31, 180, 153, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
 }
@@ -484,7 +465,7 @@ textarea {
   color: #333;
   padding: 2rem;
   width: 100%;
-  border: 1px solid #ebebeb;
+  border: 1px solid rgb(235, 235, 235);
   font-size: 1.6rem;
   letter-spacing: 0px;
   background: #f0f0f0;
@@ -542,12 +523,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(
-      to right,
-      rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(31, 81, 180, 0.7), rgba(31, 180, 153, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -587,7 +563,7 @@ textarea {
   margin: auto;
 }
 .project-details__content-title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.8rem;
   margin-bottom: 3rem;
 }
@@ -596,22 +572,18 @@ textarea {
     font-size: 2.4rem;
   }
 }
-
 .project-details__showcase-img-cont {
   width: 100%;
   margin-bottom: 6rem;
 }
-
 .project-details__showcase-img {
   width: 100%;
 }
-
 .project-details__content-main {
   width: 100%;
   max-width: 70rem;
   margin: auto;
 }
-
 .project-details__desc {
   margin: 0 0 7rem 0;
 }
@@ -621,7 +593,6 @@ textarea {
   color: grey;
   margin-bottom: 2rem;
 }
-
 .project-details__tools-used {
   margin: 0 0 7rem 0;
 }
@@ -639,7 +610,6 @@ textarea {
   font-weight: 600;
   color: #777;
 }
-
 .project-details__links {
   margin: 0 0;
 }
@@ -690,7 +660,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__logo-container:hover {
-  color: #0062b9;
+  color: rgba(31, 180, 153, 0.8);
 }
 .header__logo-img-cont {
   width: 5rem;
@@ -698,7 +668,7 @@ textarea {
   border-radius: 50px;
   overflow: hidden;
   margin-right: 1.5rem;
-  background: #0062b9;
+  background: rgba(31, 180, 153, 0.8);
 }
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
@@ -713,10 +683,6 @@ textarea {
   object-fit: cover;
   object-position: center;
   display: block;
-  transition: 0.3s;
-}
-.header__logo-img:hover {
-  transform: rotate(-30deg);
 }
 .header__logo-sub {
   font-size: 1.8rem;
@@ -743,7 +709,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__link:hover {
-  color: #0062b9;
+  color: rgba(31, 180, 153, 0.8);
 }
 @media only screen and (max-width: 56.25em) {
   .header__link {
@@ -803,7 +769,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__sm-menu-link a:hover {
-  color: #0062b9;
+  color: rgba(31, 180, 153, 0.8);
 }
 .header__sm-menu-link:first-child a {
   border-top: 1px solid #eee;
@@ -813,7 +779,6 @@ textarea {
 }
 
 .main-footer {
-  /* background: #000; */
   background: #272727;
   color: #fff;
 }
@@ -855,8 +820,6 @@ textarea {
   color: #eee;
   font-size: 1.5rem;
   line-height: 1.7;
-  /* word-break: 텍스트 단어 깨짐 방지 */
-  word-break: keep-all;
 }
 .main-footer__social-cont {
   margin-top: 2rem;
@@ -911,7 +874,7 @@ textarea {
   overflow: hidden;
 }
 .mouse::before {
-  content: '';
+  content: "";
   width: 5px;
   height: 5px;
   position: absolute;
@@ -931,7 +894,6 @@ textarea {
     top: 27px;
   }
 }
-
 @-webkit-keyframes wheel {
   to {
     opacity: 0;

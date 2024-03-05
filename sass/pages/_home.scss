@@ -2,7 +2,7 @@
   color: #fff;
   background: linear-gradient(
       to right,
-      rgba($themeClrPrimary, 0.8),
+      rgba($themeClrSecond, 0.8),
       rgba($themeClrPrimary, 0.8)
     ),
     url(../../assets/svg/common-bg.svg);
@@ -49,10 +49,10 @@
     display: block;
     padding: 1.2rem;
     border-bottom: 2px solid #eee;
-    transition: background .3s;
+    transition: background 0.3s;
 
     &:hover {
-      background: rgba(#fff,.1);
+      background: rgba(#fff, 0.1);
     }
 
     &--bd-none {
@@ -184,13 +184,22 @@
         }
       }
     }
+    &-btn {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      white-space: nowrap;
+    }
+    &-btn > a:first-child {
+      margin-right: 1.5rem;
+    }
   }
 }
 
 .contact {
   background: linear-gradient(
       to right,
-      rgba($themeClrPrimary, 0.8),
+      rgba($themeClrSecond, 0.8),
       rgba($themeClrPrimary, 0.8)
     ),
     url(../../assets/svg/common-bg.svg);
