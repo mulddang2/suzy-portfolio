@@ -7,6 +7,33 @@
   font-family: inherit;
 }
 
+/* 한글 폰트 */
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 300;
+  src: url('/assets/font/SUIT-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 400;
+  src: url('/assets/font/SUIT-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 500;
+  src: url('/assets/font/SUIT-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 600;
+  src: url('/assets/font/SUIT-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 700;
+  src: url('/assets/font/SUIT-Bold.woff2') format('woff2');
+}
+
 html {
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
@@ -31,10 +58,9 @@ body {
   box-sizing: border-box;
   position: relative;
   line-height: 1.5;
-  font-family: sans-serif;
+  font-family: 'SUIT', sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif;
   word-break: keep-all;
 }
 
