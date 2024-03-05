@@ -1,4 +1,5 @@
 .heading-primary {
+  font-weight: 800;
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -32,8 +33,12 @@
     text-align: center;
     margin-bottom: 3.5rem;
     position: relative;
+    font-weight: 900;
+    color: #111;
+
     &--lt {
       color: #fff;
+
       &::after {
         content: '';
         background: #fff !important;
@@ -91,7 +96,6 @@
 .btn {
   background: #fff;
   color: #333;
-  text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 700;
@@ -126,7 +130,7 @@
 }
 
 .sec-pad {
-  padding: 12rem 0;
+  padding: 10rem 0;
   @include respond(tab-port) {
     padding: 8rem 0;
   }

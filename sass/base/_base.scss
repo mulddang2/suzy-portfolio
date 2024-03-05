@@ -33,6 +33,16 @@
   font-weight: 700;
   src: url('/assets/font/SUIT-Bold.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 800;
+  src: url('/assets/font/SUIT-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-weight: 900;
+  src: url('/assets/font/SUIT-Heavy.woff2') format('woff2');
+}
 
 html {
   // This defines what 1rem is
@@ -58,7 +68,8 @@ body {
   box-sizing: border-box;
   position: relative;
   line-height: 1.5;
-  font-family: 'SUIT', sans-serif;
+  font-family: 
+  'SUIT', sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
   word-break: keep-all;

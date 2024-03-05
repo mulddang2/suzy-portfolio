@@ -48,6 +48,16 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   font-weight: 700;
   src: url("/assets/font/SUIT-Bold.woff2") format("woff2");
 }
+@font-face {
+  font-family: "SUIT";
+  font-weight: 800;
+  src: url("/assets/font/SUIT-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SUIT";
+  font-weight: 900;
+  src: url("/assets/font/SUIT-Heavy.woff2") format("woff2");
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -104,6 +114,7 @@ textarea {
 }
 
 .heading-primary {
+  font-weight: 800;
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -140,6 +151,8 @@ textarea {
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative;
+  font-weight: 900;
+  color: #111;
 }
 .heading-sec__main--lt {
   color: #fff;
@@ -198,7 +211,6 @@ textarea {
 .btn {
   background: #fff;
   color: #333;
-  text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 700;
@@ -230,7 +242,7 @@ textarea {
 }
 
 .sec-pad {
-  padding: 12rem 0;
+  padding: 10rem 0;
 }
 @media only screen and (max-width: 56.25em) {
   .sec-pad {
@@ -418,7 +430,7 @@ textarea {
   }
 }
 .projects__row-content-title {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2.8rem;
   margin-bottom: 2rem;
 }
@@ -429,7 +441,7 @@ textarea {
 }
 .projects__row-content-desc {
   font-size: 1.8rem;
-  color: grey;
+  color: #666;
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 3rem;
@@ -589,9 +601,10 @@ textarea {
   margin: auto;
 }
 .project-details__content-title {
-  font-weight: 500;
+  font-weight: 800;
   font-size: 2.8rem;
   margin-bottom: 3rem;
+  color: #111;
 }
 @media only screen and (max-width: 37.5em) {
   .project-details__content-title {
@@ -644,14 +657,13 @@ textarea {
 }
 @media only screen and (max-width: 37.5em) {
   .project-details__links-btn {
-    margin-right: 0;
     width: 70%;
     margin-bottom: 2rem;
     text-align: center;
   }
 }
 .project-details__links-btn:last-child {
-  margin: 0;
+  margin-top: 2rem;
 }
 @media only screen and (max-width: 37.5em) {
   .project-details__links-btn:last-child {
@@ -713,7 +725,7 @@ textarea {
 .header__logo-sub {
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 .header__links {
@@ -731,7 +743,7 @@ textarea {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 800;
   transition: color 0.3s;
 }
 .header__link:hover {
@@ -888,7 +900,7 @@ textarea {
   background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
   font-weight: 600;
-  color: #777;
+  color: #666;
 }
 
 .mouse {

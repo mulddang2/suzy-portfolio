@@ -46,9 +46,10 @@
     margin: auto;
 
     &-title {
-      font-weight: 500;
+      font-weight: 800;
       font-size: 2.8rem;
       margin-bottom: 3rem;
+      color: #111;
       @include respond(phone) {
         font-size: 2.4rem;
       }
@@ -101,13 +102,13 @@
     &-btn {
       margin-right: 2rem;
       @include respond(phone) {
-        margin-right: 0;
+        // margin-right: 0;
         width: 70%;
         margin-bottom: 2rem;
         text-align: center;
       }
       &:last-child {
-        margin: 0;
+        margin-top: 2rem;
         @include respond(phone) {
           margin: 0;
         }
