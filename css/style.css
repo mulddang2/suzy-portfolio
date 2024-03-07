@@ -213,7 +213,7 @@ textarea {
   color: #333;
   letter-spacing: 2px;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
@@ -224,6 +224,8 @@ textarea {
 .btn--bg {
   padding: 1.5rem 8rem;
   font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
 }
 .btn--med {
   padding: 1.5rem 5rem;
@@ -239,6 +241,20 @@ textarea {
   border: 2px solid rgba(31, 180, 153, 0.8);
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
+}
+
+.btn-link {
+  background: #fff;
+  color: #333;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 800;
+  border-radius: 5px;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.16);
+  transition: transform 0.3s;
+}
+.btn-link:hover {
+  transform: translateY(-3px);
 }
 
 .sec-pad {
@@ -614,6 +630,16 @@ textarea {
 .project-details__showcase-img-cont {
   width: 100%;
   margin-bottom: 6rem;
+  position: relative;
+}
+.project-details__showcase-play {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  transition: opacity 0.2s ease;
 }
 .project-details__showcase-img {
   width: 100%;
@@ -652,8 +678,18 @@ textarea {
 .project-details__links {
   margin: 0 0;
 }
+.project-details__links-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 .project-details__links-btn {
-  margin-right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+  width: 33%;
+  white-space: nowrap;
 }
 @media only screen and (max-width: 37.5em) {
   .project-details__links-btn {
@@ -662,15 +698,6 @@ textarea {
     text-align: center;
   }
 }
-.project-details__links-btn:last-child {
-  margin-top: 2rem;
-}
-@media only screen and (max-width: 37.5em) {
-  .project-details__links-btn:last-child {
-    margin: 0;
-  }
-}
-
 .header {
   position: fixed;
   width: 100%;
@@ -864,7 +891,7 @@ textarea {
 }
 .main-footer__icon {
   margin-right: 1rem;
-  width: 2.5rem;
+  width: 3.5rem;
 }
 .main-footer__icon--mr-none {
   margin-right: 0;
