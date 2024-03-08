@@ -640,6 +640,7 @@ textarea {
   width: 50%;
   height: 50%;
   transition: opacity 0.2s ease;
+  /*NOTE: 플레이버튼 호버 시, 색상이라도 변하게 하자 */
 }
 .project-details__showcase-img {
   width: 100%;
@@ -688,7 +689,7 @@ textarea {
   align-items: center;
   justify-content: center;
   border: 1px solid #333;
-  width: 33%;
+  width: 31%;
   white-space: nowrap;
 }
 @media only screen and (max-width: 37.5em) {
