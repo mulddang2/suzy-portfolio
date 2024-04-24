@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>yt-music-clone - 개인</title>
     <meta name="description" content="Case study page of Project" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -146,12 +149,14 @@
                 문제해결 과정 및 배운 점
               </h3>
               <p class="project-details__desc-para">
-                <strong>1) GitHub Pages로 배포가 불가능한 현상 </strong><br />↳ GitHub Pages의 동적
-                라우팅 및 서버 사이드 렌더링을 지원하지 않는 것을 확인 후,
-                Vercel로 배포<br /> <strong>2) playSlider에서 다음 곡 재생이 되지 않는 현상 </strong><br />↳
-                슬라이더 가장 끝으로 옮겼을 때, play 상태 시간이 100초인 것을
-                확인 후, Radix 공식문서에서 max값 기본 속성이 100인 것을 확인<br /> ↳
-                슬라이더 max값이 플레이타임의 끝과 일치하도록 변경
+                <strong>1) GitHub Pages로 배포가 불가능한 현상 </strong><br />↳
+                GitHub Pages의 동적 라우팅 및 서버 사이드 렌더링을 지원하지 않는
+                것을 확인 후, Vercel로 배포<br />
+                <strong>2) playSlider에서 다음 곡 재생이 되지 않는 현상 </strong
+                ><br />↳ 슬라이더 가장 끝으로 옮겼을 때, play 상태 시간이
+                100초인 것을 확인 후, Radix 공식문서에서 max값 기본 속성이 100인
+                것을 확인<br />
+                ↳ 슬라이더 max값이 플레이타임의 끝과 일치하도록 변경
               </p>
             </div>
             <div class="project-details__desc">
@@ -162,7 +167,9 @@
                   구현
                 </li>
                 <li>
-                  - Next.js 사용: AppRouter 기능활용으로 페이지 렌더링 성능과 SEO를 개선하였고, &lt;Image /&gt; 컴포넌트 활용하여 페이지 로딩 속도 개선
+                  - Next.js 사용: AppRouter 기능활용으로 페이지 렌더링 성능과
+                  SEO를 개선하였고, &lt;Image /&gt; 컴포넌트 활용하여 페이지
+                  로딩 속도 개선
                 </li>
                 <li>
                   - shadcn/ui 사용: 이전 프로젝트에서 사용했던 MUI에 비해
@@ -192,6 +199,10 @@
         </div>
       </div>
     </section>
+    <div id="quick-button">
+      <button id="topButton"><i class="fas fa-arrow-up"></i></button>
+      <button id="homeButton"><i class="fas fa-home"></i></button>
+    </div>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
