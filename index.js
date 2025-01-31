@@ -59,13 +59,7 @@ topButton.addEventListener('click', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const homeButton = document.getElementById('homeButton');
-  if (homeButton) {
-    homeButton.addEventListener('click', function() {
-      window.location.href = '/suzy-portfolio'; 
-    });
-  } else {
-    console.error('homeButton 요소를 찾을 수 없습니다.');
-  }
+const homeButton = document.getElementById('homeButton');
+homeButton.addEventListener('click', function() {
+  window.location.href = 'https://mulddang2.github.io/suzy-portfolio'; 
 });
