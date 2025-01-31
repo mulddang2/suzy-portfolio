@@ -59,7 +59,13 @@ topButton.addEventListener('click', function() {
   });
 });
 
-const homeButton = document.getElementById('homeButton');
-homeButton.addEventListener('click', function() {
-  window.location.href = '/suzy-portfolio'; 
+document.addEventListener('DOMContentLoaded', function() {
+  const homeButton = document.getElementById('homeButton');
+  if (homeButton) {
+    homeButton.addEventListener('click', function() {
+      window.location.href = '/suzy-portfolio'; 
+    });
+  } else {
+    console.error('homeButton 요소를 찾을 수 없습니다.');
+  }
 });
