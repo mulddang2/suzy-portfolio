@@ -61,5 +61,5 @@ topButton.addEventListener('click', function() {
 
 const homeButton = document.getElementById('homeButton');
 homeButton.addEventListener('click', function() {
-  window.location.href = '/'; 
+  window.location.href = '/suzy-portfolio'; 
 });
